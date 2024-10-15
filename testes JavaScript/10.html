@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exe8</title>
+</head>
+
+<body>
+    <button onclick="myFunction()">Começar</button>
+    <script>
+        function myFunction() {
+            let y = [[1, 2, 3],
+            [4, 5, 6],
+            [7, 8, 9]
+            ];
+            let media = 0;
+            notas.forEach(v => {
+                v.forEach(x => {
+                    media += x;
+                })
+            });
+            media /= notas.length * notas[0].length;
+
+            alert("A média é: " + media);
+        }
+    </script>
+</body>
+
+</html>

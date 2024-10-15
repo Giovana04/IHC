@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exe2</title>
+</head>
+<body>
+    <form id="minhaNota">
+        <label for="n1">Nota:</label>
+        <input type="number" id="nota" nome="number">
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <script>
+        const formulario = document.getElementById('minhaNota');
+        formulario.addEventListener('submit', function(){
+            const numero1 = document.getElementById('nota').value;
+            if (numero1>6 && numero1<8){
+                alert("Aprovado!");
+            }
+            else if(numero1<6){
+                alert("Reprovado!")
+            }
+            else{
+                alert("Aprovado com louvor!")
+            }
+            
+        })
+    </script>
+</body>
+</html>

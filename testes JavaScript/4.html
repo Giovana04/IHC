@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exe4</title>
+</head>
+<body>
+    <button onclick="myFunction()">Começar</button>
+    <script>
+        function myFunction(){
+            const v = [];
+            let i = 0, soma = 0;
+            let valor = prompt("Insira o número desejado", 0);
+            while (Boolean(valor !== null)){
+                v[i] = parseInt(valor);
+                soma += v[i];
+                i++;
+                valor = prompt("Insira o número desejado", 0);
+            };
+            alert(soma/v.length);
+        }
+    </script>
+</body>
+</html>

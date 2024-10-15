@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="minhaLetra">
+        <label for="L">Letra:</label>
+        <input type="text" id="l" nome="text">
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <script>
+        const formulario = document.getElementById('minhaLetra');
+        formulario.addEventListener('submit', function(){
+            const caracter = document.getElementById('l').value;
+            if (caracter === "a") {
+                alert("A");
+            }
+            else if(caracter === "b"){
+                alert("B");
+            }
+            else{
+                alert("Outra Letra")
+            }
+            
+        })
+    </script>    
+</body>
+</html>
